@@ -1,0 +1,20 @@
+# Core dependencies
+numpy
+matplotlib
+polars
+pyyaml
+Pillow
+psutil
+requests>=2.23.0
+torch>=1.8.0 # Or specific version/variant
+torchvision>=0.9.0 # Or specific version/variant
+
+# Install ultralytics from a specific git commit or branch
+# Replace YOUR_USERNAME and custom-branch with your details
+# git+https://github.com/YOUR_USERNAME/ultralytics.git@custom-branch
+ultralytics>=8.0.0
+
+# Video processing
+opencv-python>=4.5.0
+
+# Other project dependencies
