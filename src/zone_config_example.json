@@ -1,0 +1,68 @@
+{
+  "zones": [
+    {
+      "name": "Restricted Area - Main Entrance",
+      "points": [
+        [100, 100],
+        [400, 100],
+        [400, 300],
+        [100, 300]
+      ],
+      "type": "restricted",
+      "description": "Main entrance restricted zone"
+    },
+    {
+      "name": "Entry Zone - Left Side",
+      "points": [
+        [0, 0],
+        [200, 0],
+        [200, 200],
+        [0, 200]
+      ],
+      "type": "entry",
+      "description": "Left side entry monitoring"
+    },
+    {
+      "name": "Exit Zone - Right Side",
+      "points": [
+        [600, 0],
+        [800, 0],
+        [800, 200],
+        [600, 200]
+      ],
+      "type": "exit",
+      "description": "Right side exit monitoring"
+    },
+    {
+      "name": "General Monitoring Area",
+      "points": [
+        [200, 200],
+        [600, 200],
+        [600, 400],
+        [200, 400]
+      ],
+      "type": "monitoring",
+      "description": "General area monitoring"
+    }
+  ],
+  "tracking_config": {
+    "classes": [0, 2, 3, 5, 7],
+    "class_names": {
+      "0": "person",
+      "2": "car",
+      "3": "motorcycle",
+      "5": "bus",
+      "7": "truck"
+    },
+    "conf_threshold": 0.25,
+    "loitering_threshold_frames": 90
+  },
+  "alerts": {
+    "enable_email": false,
+    "enable_console": true,
+    "alert_on_restricted_entry": true,
+    "alert_on_loitering": true,
+    "loitering_duration_seconds": 3
+  }
+}
+
